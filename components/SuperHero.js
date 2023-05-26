@@ -1,5 +1,8 @@
 function SuperHero(props) {
     return (
-        <h2>{props.name}</h2>
+        <h2>{props.children}</h2>
     )
 }
+
+
+export default SuperHero
