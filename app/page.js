@@ -1,15 +1,17 @@
 import SuperHero from '@/components/SuperHero'
+import ThinkPositive from '@/components/ThinkPositive'
 
 
 function Home () {
   return (
     <div>
-      <SuperHero 
+      {/* <SuperHero 
         name='Iron Man'
       />
       <SuperHero 
         name='Bat Man'
-      />
+      /> */}
+      <ThinkPositive />
     </div>
   )
 }
