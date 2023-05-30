@@ -1,25 +1,13 @@
-import SuperHero from '@/components/SuperHero'
-import ThinkPositive from '@/components/ThinkPositive'
+import ButtonCounter from '@/components/ButtonCounter'
 
 
 function Home () {
   return (
     <div>
-      {/* <SuperHero 
-        name='Iron Man'
-      />
-      <SuperHero 
-        name='Bat Man'
-      /> */}
-      <ThinkPositive />
+      <ButtonCounter />
     </div>
   )
 }
 
 
 export default Home
-
-// PascalCase -> OnClickHandler
-// camelCase  -> onClickHandler
-// snake_case -> on_click_handler
-// kebab-case -> on-click-handler
