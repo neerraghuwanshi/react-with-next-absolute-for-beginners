@@ -1,10 +1,10 @@
-import ButtonCounter from '@/components/ButtonCounter'
+import CustomInput from '@/components/CustomInput'
 
 
 function Home () {
   return (
     <div>
-      <ButtonCounter />
+      <CustomInput />
     </div>
   )
 }
