@@ -1,10 +1,10 @@
-import CustomInput from '@/components/CustomInput'
+import CustomForm from '@/components/CustomForm'
 
 
 function Home () {
   return (
     <div>
-      <CustomInput />
+      <CustomForm />
     </div>
   )
 }
