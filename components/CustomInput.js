@@ -2,7 +2,7 @@
 
 
 import React, { useState } from 'react'
-import '@/styles/CustomForm.css'
+
 
 function CustomInput() {
 
@@ -14,13 +14,13 @@ function CustomInput() {
     }
 
     return (
-        <div>
+        <>
             <input
                 value={password}
                 onChange={changePassword}
             />
             {password.length < 10 && <h1>Invalid Password</h1>}
-        </div>
+        </>
     )
 }
 

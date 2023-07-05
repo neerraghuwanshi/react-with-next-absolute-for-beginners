@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react'
+import '@/styles/CustomForm.css'
 
 
 function CustomForm() {
@@ -35,26 +36,24 @@ function CustomForm() {
     }
 
     return (
-        <div>
-            <form onSubmit={onSubmitHandler} id='formContainer'>
-                <input 
-                    value={username}
-                    className='formInput'
-                    onChange={event => setUsername(event.target.value)}
-                />
-                <input
-                    type="password"
-                    value={password}
-                    className='formInput'
-                    onChange={event => setPassword(event.target.value)}
-                />
-                <button
-                    className='formInput'
-                >
-                    Submit
-                </button>
-            </form>
-        </div>
+        <form onSubmit={onSubmitHandler} id='formContainer'>
+            <input 
+                value={username}
+                className='formInput'
+                onChange={event => setUsername(event.target.value)}
+            />
+            <input
+                type="password"
+                value={password}
+                className='formInput'
+                onChange={event => setPassword(event.target.value)}
+            />
+            <button
+                className='formInput'
+            >
+                Submit
+            </button>
+        </form>
     )
 }
 

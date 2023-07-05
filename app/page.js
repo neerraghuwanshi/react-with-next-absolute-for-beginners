@@ -1,13 +1,16 @@
 import CustomForm from '@/components/CustomForm'
 import CustomInput from '@/components/CustomInput'
+import UnderstandJSX from '@/components/UnderstandJSX'
+import Wrapper from '@/components/Wrapper'
 
 
 function Home () {
   return (
-    <div>
+    <Wrapper>
+      <UnderstandJSX />
       <CustomForm />
       <CustomInput />
-    </div>
+    </Wrapper>
   )
 }
 
