@@ -32,21 +32,25 @@ function CustomForm() {
             })
             .then((response) => response.json())
             .then((json) => console.log(json));
-        }
+    }
 
     return (
         <div>
-            <form onSubmit={onSubmitHandler}>
+            <form onSubmit={onSubmitHandler} id='formContainer'>
                 <input 
                     value={username}
+                    className='formInput'
                     onChange={event => setUsername(event.target.value)}
                 />
                 <input
                     type="password"
                     value={password}
+                    className='formInput'
                     onChange={event => setPassword(event.target.value)}
                 />
-                <button>
+                <button
+                    className='formInput'
+                >
                     Submit
                 </button>
             </form>

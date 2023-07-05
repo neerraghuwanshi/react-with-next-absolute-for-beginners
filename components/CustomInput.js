@@ -2,7 +2,7 @@
 
 
 import React, { useState } from 'react'
-
+import '@/styles/CustomForm.css'
 
 function CustomInput() {
 
