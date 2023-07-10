@@ -1,16 +1,15 @@
-import CustomForm from '@/components/CustomForm'
-import CustomInput from '@/components/CustomInput'
-import UnderstandJSX from '@/components/UnderstandJSX'
-import Wrapper from '@/components/Wrapper'
+import Link from 'next/link'
 
 
 function Home () {
   return (
-    <Wrapper>
-      <UnderstandJSX />
-      <CustomForm />
-      <CustomInput />
-    </Wrapper>
+    <>
+      {/* Bad Practice */}
+      <a href="/login">Bad Login</a>
+      <br/>
+      {/* Good Practice */}
+      <Link href="/login">Good Login</Link>
+    </>
   )
 }
 
