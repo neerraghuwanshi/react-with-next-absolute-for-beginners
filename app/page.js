@@ -1,15 +1,9 @@
-import Link from 'next/link'
+import ParentComponent from '@/components/ParentComponent'
 
 
 function Home () {
   return (
-    <>
-      {/* Bad Practice */}
-      <a href="/login">Bad Login</a>
-      <br/>
-      {/* Good Practice */}
-      <Link href="/login">Good Login</Link>
-    </>
+    <ParentComponent/>
   )
 }
 
