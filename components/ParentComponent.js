@@ -2,6 +2,7 @@
 
 
 import { useState } from 'react'
+import ChildComponent from './ChildComponent';
 
 
 function ParentComponent() {
@@ -12,8 +13,6 @@ function ParentComponent() {
         setShow(prev => !prev)
     }
 
-    console.log('Running');
-
     return (
         <>
             <button onClick={onClickHandler}>
@@ -21,9 +20,7 @@ function ParentComponent() {
             </button>
             {
                 show &&
-                <h1>
-                    This was to be shown
-                </h1>
+                <ChildComponent />
             }
         </>
     )
