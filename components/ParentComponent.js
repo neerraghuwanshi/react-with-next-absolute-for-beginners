@@ -1,13 +1,22 @@
 'use client';
 
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ChildComponent from './ChildComponent';
 
 
 function ParentComponent() {
 
     const [show, setShow] = useState(false)
+
+    // Inse bhi update ho jata hai component
+    // useSelector()
+    // useReducer()
+
+    useEffect(() => {
+        // Do an ajax call for eg.
+        console.log('Parent Mounted or Updated');
+    })
 
     const onClickHandler = () => {
         setShow(prev => !prev)
@@ -18,10 +27,7 @@ function ParentComponent() {
             <button onClick={onClickHandler}>
                 Toggle
             </button>
-            {
-                show &&
-                <ChildComponent />
-            }
+            <ChildComponent show={show}/>
         </>
     )
 }
