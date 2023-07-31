@@ -1,7 +1,12 @@
+import FC from "@/components/FC"
+import CC from "@/components/CC"
+
+
 function Home () {
   return (
     <div>
-      <h1>Neer</h1>
+      <FC/>
+      <CC/>
     </div>
   )
 }
